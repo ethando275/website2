@@ -154,7 +154,7 @@ function Projects() {
       <div className="game-world" ref={gameRef}>
         <button
           className="view-toggle"
-          onClick={() => navigate("/experiences")}
+          onClick={() => navigate("/website2/experiences")}
         >
           Switch to List View
         </button>
