@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar";
 import "./experienceList.css";
 
@@ -61,13 +62,15 @@ const projects = [
 ];
 
 function ExperienceList() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Navbar />
       <div className="experience-container">
         <button
           className="view-toggle"
-          onClick={() => (window.location.href = "/experienceGame")}
+          onClick={() => navigate("/experienceGame")}
         >
           Switch to Game View
         </button>

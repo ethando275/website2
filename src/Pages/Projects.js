@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import Navbar from "../components/navbar";
+import { useNavigate } from "react-router-dom";
 import "./Projects.css";
 
 const projects = [
@@ -73,6 +74,7 @@ const WORLD_BOUNDS = {
 };
 
 function Projects() {
+  const navigate = useNavigate();
   const [playerPos, setPlayerPos] = useState({
     x: 50,
     y: GROUND_LEVEL,
@@ -152,7 +154,7 @@ function Projects() {
       <div className="game-world" ref={gameRef}>
         <button
           className="view-toggle"
-          onClick={() => (window.location.href = "/experiences")}
+          onClick={() => navigate("/experiences")}
         >
           Switch to List View
         </button>
