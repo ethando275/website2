@@ -4,12 +4,13 @@
   background-color: black;
   color: white;
   font-family: 'Press Start 2P', cursive;
+  overflow-x: hidden;
 }
 
 .timeline {
   position: absolute;
   top: 60%;
-  left: 200px;
+  left: clamp(50px, 15vw, 200px);
   width: 200%;
   height: 4px;
   background-color: #666;
@@ -17,7 +18,7 @@
 }
 
 .game-world {
-  height: calc(100vh - 100px);
+  height: calc(100vh - clamp(60px, 10vh, 100px));
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -145,10 +146,10 @@
   bottom: 100%;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 400px;
+  width: clamp(280px, 40vw, 500px);
   background-color: rgba(0, 0, 0, 0.95);
   border: 2px solid #666;
-  padding: 25px;
+  padding: clamp(10px, 2vw, 20px);
   border-radius: 5px;
   color: white;
   z-index: 9999;
@@ -178,7 +179,7 @@
 
 .project-popup h3 {
   font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
   margin: 0 0 15px 0;
   white-space: nowrap;
   overflow: hidden;
@@ -187,14 +188,14 @@
 
 .project-popup .duration {
   font-family: 'Press Start 2P', cursive;
-  font-size: 0.7em;
+  font-size: clamp(0.6rem, 0.8vw, 0.7rem);
   color: #888;
   margin-bottom: 15px;
 }
 
 .project-popup .description {
   margin: 15px 0;
-  font-size: 0.75em;
+  font-size: clamp(0.6rem, 0.8vw, 0.7rem);
   line-height: 1.6;
   display: block;
   overflow-y: auto;
@@ -218,7 +219,7 @@
 }
 
 .project-popup .technologies {
-  font-size: 0.7em;
+  font-size: clamp(0.6rem, 0.8vw, 0.7rem);
   color: #aaa;
   margin: 15px 0;
   line-height: 1.4;
@@ -232,7 +233,7 @@
   color: white;
   text-decoration: none;
   border-radius: 3px;
-  font-size: 0.7em;
+  font-size: clamp(0.6rem, 0.8vw, 0.7rem);
   transition: background-color 0.2s ease;
 }
 
@@ -245,7 +246,7 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  padding-left: 200px;
+  padding-left: clamp(50px, 15vw, 200px);
 }
 
 .instructions {
@@ -255,7 +256,7 @@
   transform: translateX(-50%);
   font-family: 'Press Start 2P', cursive;
   color: #666;
-  font-size: 0.8em;
+  font-size: clamp(0.6rem, 0.8vw, 0.8rem);
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid #666;
@@ -282,7 +283,7 @@
   border: 2px solid #666;
   color: #fff;
   font-family: 'Press Start 2P', cursive;
-  font-size: 1.2em;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -306,7 +307,7 @@
   border: 2px solid #666;
   color: white;
   font-family: 'Press Start 2P', cursive;
-  font-size: 0.7em;
+  font-size: clamp(0.6rem, 0.8vw, 0.7rem);
   cursor: pointer;
   transition: background-color 0.3s;
   z-index: 1000;
@@ -314,4 +315,52 @@
 
 .view-toggle:hover {
   background-color: #666;
+}
+
+.mobile-controls {
+  display: none;
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-controls {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .project-popup {
+    width: clamp(250px, 80vw, 400px);
+    font-size: 0.8rem;
+  }
+  
+  .timeline {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-popup {
+    width: 90vw;
+    padding: 15px;
+  }
+  
+  .project-popup h3 {
+    font-size: 0.9rem;
+  }
+  
+  .project-popup .duration {
+    font-size: 0.7rem;
+  }
+  
+  .project-popup .description {
+    font-size: 0.7rem;
+  }
+  
+  .project-popup .technologies {
+    font-size: 0.6rem;
+  }
 }
