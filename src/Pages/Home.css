@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.home-container {
+  background: url('../assets/background4.gif') top right;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-text {
+  text-align: center;
+}
+
+.typing-line {
+  margin: 20px 0;
+}
+
+.pixel-text {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.2);
+}
+
+.typing-animation-1, .typing-animation-2 {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 0;
+  max-width: fit-content;
+}
+
+.typing-animation-1 {
+  animation: 
+    typing1 3.5s steps(21, end) forwards,
+    blink-caret .75s step-end 5,
+    remove-caret 0s 3.5s forwards;
+}
+
+.typing-animation-2 {
+  opacity: 0;
+  animation: 
+    typing2 3.5s steps(17, end) forwards,
+    blink-caret .75s step-end infinite;
+  animation-delay: 3.5s;
+}
+
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  0% { 
+    opacity: 1;
+    width: 0;
+  }
+  100% { 
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+@keyframes remove-caret {
+  to {
+    border-right: none;
+  }
+}
+
+@keyframes slowBackground {
+  from {
+    background-position: center center;
+  }
+  to {
+    background-position: center center;
+  }
+}
+
+.home-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 0.5s ease-out forwards;
+  animation-delay: 7s;
+}
+
+.nav-link {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

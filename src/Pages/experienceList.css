@@ -1,0 +1,135 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.experience-container {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+  height: calc(100vh - 100px); /* Height minus navbar */
+  overflow-y: auto;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.view-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #444;
+  border: 2px solid #666;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.view-toggle:hover {
+  background-color: #666;
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background-color: #222;
+  border: 2px solid #666;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.experience-item::-webkit-scrollbar {
+  width: 6px;
+}
+
+.experience-item::-webkit-scrollbar-track {
+  background: rgba(102, 102, 102, 0.1);
+}
+
+.experience-item::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 3px;
+}
+
+.experience-header {
+  margin-bottom: 15px;
+}
+
+.experience-header h2 {
+  font-size: 0.9em;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.date {
+  font-size: 0.7em;
+  color: #666;
+  display: block;
+}
+
+.description {
+  font-size: 0.7em;
+  line-height: 1.6;
+  color: #aaa;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tech-item {
+  background-color: #333;
+  color: #aaa;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.6em;
+  border: 1px solid #666;
+}
+
+.experience-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.experience-container::-webkit-scrollbar-track {
+  background: rgba(102, 102, 102, 0.1);
+}
+
+.experience-container::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .experience-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-list {
+    grid-template-columns: 1fr;
+  }
+}

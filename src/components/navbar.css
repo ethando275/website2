@@ -1,0 +1,27 @@
+.nav-links {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2000; /* Ensure navbar is above container */
+}
+
+.nav-link {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+}
