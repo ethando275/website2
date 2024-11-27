@@ -39,7 +39,7 @@ function App() {
           <Route path="/experienceGame" element={<Projects />} />
           <Route path="/experiences" element={<ExperienceList />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </Router>
