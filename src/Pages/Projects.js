@@ -67,10 +67,10 @@ const projects = [
 ];
 
 const MOVE_SPEED = 3;
-const GROUND_LEVEL = window.innerHeight - 230;
+const GROUND_LEVEL = window.innerHeight - 210;
 const WORLD_BOUNDS = {
   left: 0,
-  right: Math.max(...projects.map((p) => p.position)) + 200,
+  right: Math.max(...projects.map((p) => p.position)) - 800,
 };
 
 function Projects() {
