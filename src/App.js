@@ -15,16 +15,7 @@ import "./App.css";
 import Navbar from "./components/navbar";
 
 function NavbarWrapper() {
-  const location = useLocation();
-  const showNavbar = [
-    "/about",
-    "/projects",
-    "/experiences",
-    "/experienceGame",
-    "/contact",
-  ].includes(location.pathname);
-
-  return showNavbar ? <Navbar /> : null;
+  return <Navbar />;
 }
 
 function App() {

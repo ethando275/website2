@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
@@ -14,33 +13,6 @@ function Home() {
             welcome to my website!
           </span>
         </div>
-      </div>
-      <div className="home-nav">
-        <Link to="/about" className="nav-link">
-          About
-        </Link>
-        <Link to="/experiences" className="nav-link">
-          Experiences
-        </Link>
-        <a
-          href="https://github.com/ethando275"
-          className="nav-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-        <a
-          href="/resume.pdf"
-          className="nav-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
-        <Link to="/contact" className="nav-link">
-          Contact
-        </Link>
       </div>
     </div>
   );
