@@ -61,7 +61,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "Software Engineer Intern - WIT Sports",
+    title: "WIT Sports SWE Intern",
     description:
       "Built a fraud detection pipeline to uncover unauthorized posts of prize activations, preventing inflated contest entries and bot abuse.",
     tech: [

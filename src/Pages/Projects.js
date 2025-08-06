@@ -66,7 +66,7 @@ const projects = [
   },
   {
     id: 7,
-    title: "Fraud Detection Pipeline - WIT Sports",
+    title: "WIT Sports SWE Intern",
     description:
       "Built a fraud detection pipeline to uncover unauthorized posts of prize activations (e.g., car giveaways), preventing inflated contest entries and bot abuse. The system uses Google Search API and Playwright/BeautifulSoup to scan for unapproved domains sharing activation links, with automated Slack alerts and GitHub Actions scheduling.",
     tech: [
