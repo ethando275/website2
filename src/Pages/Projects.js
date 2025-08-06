@@ -64,6 +64,22 @@ const projects = [
     position: 2000,
     date: "Sep 2024 - Jan 2025",
   },
+  {
+    id: 7,
+    title: "Fraud Detection Pipeline - WIT Sports",
+    description:
+      "Built a fraud detection pipeline to uncover unauthorized posts of prize activations (e.g., car giveaways), preventing inflated contest entries and bot abuse. The system uses Google Search API and Playwright/BeautifulSoup to scan for unapproved domains sharing activation links, with automated Slack alerts and GitHub Actions scheduling.",
+    tech: [
+      "Python",
+      "Google Search API",
+      "Playwright",
+      "BeautifulSoup",
+      "GitHub Actions",
+      "Slack API",
+    ],
+    position: 2400,
+    date: "May 2025 - Aug 2025",
+  },
 ];
 
 const MOVE_SPEED = 3;
