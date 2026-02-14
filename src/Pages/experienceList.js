@@ -83,6 +83,21 @@ const projects = [
     tech: ["React", "Node.js", "PostgreSQL", "Cloudinary", "Google Cloud"],
     date: "Sep 2024 - Jan 2025",
   },
+  {
+    id: 6,
+    title: "WIT Sports SWE Intern",
+    description:
+      "Built a fraud detection pipeline to uncover unauthorized posts of prize activations, preventing inflated contest entries and bot abuse.",
+    tech: [
+      "Python",
+      "Google Search API",
+      "Playwright",
+      "BeautifulSoup",
+      "GitHub Actions",
+      "Slack API",
+    ],
+    date: "May 2025 - Aug 2025",
+  },
 ];
 
 function ExperienceList() {

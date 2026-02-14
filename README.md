@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website, a modern and responsive web application built with React. This single-page application showcases my professional journey, projects, and skills in an interactive and visually appealing way.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Responsive Design**: Looks great on all devices
+- **Modern UI/UX**: Clean and intuitive user interface
+- **Multiple Sections**:
+  - Home: Welcome section with a brief introduction
+  - About: Detailed information about me and my skills
+  - Projects: Showcase of my work with descriptions and links
+  - Experience: Professional background and work history
+  - Contact: Easy way to get in touch
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 18
+- **Routing**: React Router DOM v7
+- **Styling**: CSS3
+- **Build Tool**: Create React App
+- **Deployment**: GitHub Pages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or higher)
+- npm (v6 or higher) or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/ethando275/website2.git
+   cd website2
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+   The application will open in your default browser at `http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Building for Production
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+# or
+yarn build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deployment
 
-## Learn More
+This project is set up to be deployed to GitHub Pages. To deploy your own copy:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Update the `homepage` field in `package.json` to point to your GitHub Pages URL
+2. Install gh-pages if not already installed:
+   ```bash
+   npm install --save gh-pages
+   ```
+3. Deploy:
+   ```bash
+   npm run deploy
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is open source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+Feel free to reach out through the contact section of the website or open an issue in this repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with by Ethan Do
