@@ -3,7 +3,7 @@ import "./contact.css";
 
 function Contact() {
   const contactInfo = {
-    email: "ethando275@gmail.com",
+    email: "ed8205@alumni.princeton.edu",
     linkedin: "https://www.linkedin.com/in/ethando275",
     github: "https://github.com/ethando275",
   };
