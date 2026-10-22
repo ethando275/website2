@@ -28,6 +28,74 @@
   color: white;
 }
 
+.skills-section {
+  margin-top: clamp(1.5rem, 3vh, 2.5rem);
+  padding-top: clamp(1rem, 2vh, 1.5rem);
+  border-top: 1px solid #444;
+}
+
+.skills-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: white;
+  background: none;
+  border: none;
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+
+.skills-toggle:hover {
+  color: #ccc;
+}
+
+.skills-toggle-arrow {
+  display: inline-block;
+  font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+  transition: transform 0.2s ease;
+}
+
+.skills-toggle-arrow.open {
+  transform: rotate(90deg);
+}
+
+.skills-body {
+  margin-top: clamp(0.8rem, 2vh, 1.2rem);
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: clamp(0.6rem, 1.5vh, 1rem);
+}
+
+.skill-category {
+  font-size: clamp(0.5rem, 1vw, 0.65rem);
+  color: #888;
+  white-space: nowrap;
+  padding-top: 3px;
+  min-width: 80px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(4px, 0.8vw, 6px);
+}
+
+.skill-tag {
+  font-size: clamp(0.45rem, 0.9vw, 0.6rem);
+  padding: clamp(3px, 0.5vw, 5px) clamp(6px, 1vw, 10px);
+  background-color: #333;
+  border: 1px solid #555;
+  color: #ddd;
+}
+
 .about-text {
   line-height: 1.8;
   font-size: clamp(0.7rem, 2vw, 1rem);

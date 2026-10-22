@@ -6,9 +6,9 @@ body {
 
 .experience-container {
   width: 100%;
-  padding: clamp(10px, 2vw, 20px);
+  padding: clamp(60px, 8vh, 80px) clamp(10px, 2vw, 20px) clamp(100px, 15vh, 130px);
   font-family: 'Press Start 2P', cursive;
-  height: calc(100vh - clamp(80px, 10vh, 100px));
+  height: 100vh;
   overflow-y: auto;
   position: fixed;
   top: 0;
@@ -31,14 +31,27 @@ body {
   z-index: 1000;
 }
 
+.experience-section {
+  max-width: 1400px;
+  margin: 0 auto clamp(20px, 4vh, 40px) auto;
+}
+
+.section-title {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: #aaa;
+  border-bottom: 2px solid #444;
+  padding-bottom: clamp(8px, 1.5vh, 12px);
+  margin-bottom: clamp(12px, 2vh, 20px);
+  text-align: left;
+  padding-left: clamp(10px, 2vw, 20px);
+}
+
 .experience-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: clamp(10px, 2vw, 20px);
-  padding: clamp(10px, 2vw, 20px);
-  padding-bottom: clamp(40px, 5vh, 60px);
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 0 clamp(10px, 2vw, 20px);
+  padding-bottom: clamp(20px, 3vh, 30px);
 }
 
 .experience-item {

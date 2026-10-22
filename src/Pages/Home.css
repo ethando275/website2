@@ -39,19 +39,21 @@
   max-width: fit-content;
 }
 
+/* "hi, i'm ethan." = 14 chars */
 .typing-animation-1 {
-  animation: 
-    typing1 3.5s steps(21, end) forwards,
-    blink-caret .75s step-end 5,
-    remove-caret 0s 3.5s forwards;
+  animation:
+    typing1 2s steps(14, end) forwards,
+    blink-caret .75s step-end 3,
+    remove-caret 0s 2s forwards;
 }
 
+/* "welcome to my website!" = 22 chars */
 .typing-animation-2 {
   opacity: 0;
-  animation: 
-    typing2 3.5s steps(17, end) forwards,
+  animation:
+    typing-reveal 2.5s steps(22, end) forwards,
     blink-caret .75s step-end infinite;
-  animation-delay: 3.5s;
+  animation-delay: 2s;
 }
 
 @keyframes typing1 {
@@ -59,12 +61,12 @@
   to { width: 100% }
 }
 
-@keyframes typing2 {
-  0% { 
+@keyframes typing-reveal {
+  0% {
     opacity: 1;
     width: 0;
   }
-  100% { 
+  100% {
     opacity: 1;
     width: 100%;
   }
@@ -76,18 +78,7 @@
 }
 
 @keyframes remove-caret {
-  to {
-    border-right: none;
-  }
-}
-
-@keyframes slowBackground {
-  from {
-    background-position: center center;
-  }
-  to {
-    background-position: center center;
-  }
+  to { border-right: none; }
 }
 
 .home-nav {

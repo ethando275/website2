@@ -1,16 +1,15 @@
 import React from "react";
-import Navbar from "../components/navbar";
 import "./contact.css";
 
 function Contact() {
   const contactInfo = {
     email: "ethando275@gmail.com",
     linkedin: "https://www.linkedin.com/in/ethando275",
+    github: "https://github.com/ethando275",
   };
 
   return (
     <>
-      <Navbar />
       <div className="contact-container">
         <div className="contact-content">
           <h1 className="contact-title">Contact Me</h1>
@@ -48,8 +47,15 @@ function Contact() {
               </div>
 
               <div className="contact-item">
-                <span className="icon">📱</span>
-                <span className="contact-text">1-609-437-6039</span>
+                <span className="icon">🐙</span>
+                <a
+                  href={contactInfo.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-link"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
 
